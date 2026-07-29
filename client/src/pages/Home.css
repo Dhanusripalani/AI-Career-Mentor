@@ -1,0 +1,76 @@
+.home-container {
+  min-height: 100vh;
+  background: linear-gradient(
+    135deg,
+    #667eea,
+    #764ba2
+  );
+
+  color: white;
+  text-align: center;
+  padding: 40px;
+}
+
+
+.home-content h1 {
+  font-size: 45px;
+}
+
+
+.home-content p {
+  font-size: 18px;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+
+.home-buttons button {
+
+  padding: 12px 30px;
+  margin: 10px;
+
+  border: none;
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  font-size: 16px;
+}
+
+
+.register-btn {
+  background: #222;
+  color: white;
+}
+
+
+.features {
+  margin-top: 50px;
+}
+
+
+.feature-list {
+
+  display: grid;
+
+  grid-template-columns:
+  repeat(3,1fr);
+
+  gap: 20px;
+
+}
+
+
+.card {
+
+  background: white;
+
+  color: #333;
+
+  padding: 25px;
+
+  border-radius: 15px;
+
+  font-size: 18px;
+
+}

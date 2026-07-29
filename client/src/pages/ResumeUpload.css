@@ -1,0 +1,92 @@
+.resume-container {
+
+  min-height: 100vh;
+
+  background: #f5f7fb;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+}
+
+
+.resume-box {
+
+  background: white;
+
+  padding: 40px;
+
+  width: 400px;
+
+  text-align: center;
+
+  border-radius: 15px;
+
+  box-shadow:
+  0 5px 20px rgba(0,0,0,0.1);
+
+}
+
+
+.resume-box h1 {
+
+  color: #333;
+
+}
+
+
+.resume-box input {
+
+  margin: 20px;
+
+}
+
+
+.resume-box button {
+
+  padding: 12px 25px;
+
+  background: #667eea;
+
+  color: white;
+
+  border: none;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+}
+
+.analysis-box {
+  margin-top: 30px;
+  background: #ffffff;
+  border: 2px solid #2563eb;
+  border-radius: 12px;
+  padding: 25px;
+  text-align: left;
+  color: #222;
+}
+
+.analysis-box h2 {
+  color: #1d4ed8;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+.analysis-box pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  line-height: 1.8;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  color: #222;          
+}
+
+button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
