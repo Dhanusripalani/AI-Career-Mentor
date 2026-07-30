@@ -20,34 +20,19 @@ function ResumeUpload() {
 
     setLoading(true);
 
-    const resumeText = `
-Resume File Name:
-${file.name}
+   const formData = new FormData();
+   formData.append("resume", file);
 
-Candidate Skills:
-React.js
-JavaScript
-HTML
-CSS
-Node.js
-MongoDB
-
-Analyze this resume and provide:
-
-1. Skills Found
-2. Missing Skills
-3. Suitable Career Roles
-4. Learning Roadmap
-5. Interview Preparation Tips
-`;
-
-    try {
-      const response = await axios.post(
-        "http://localhost:5000/api/ai/analyze",
-        {
-          resumeText,
-        }
-      );
+  try {
+    const response = await axios.post(
+     "http://localhost:5000/api/ai/analyze",
+    formData,
+    {
+      headers: {
+        "Content-Type": "multipart/form-data",
+    },
+  }
+);
 
       setAnalysis(response.data.analysis);
 

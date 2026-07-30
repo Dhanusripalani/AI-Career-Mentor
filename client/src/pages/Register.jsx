@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "./Auth.css";
 
 
+
 function Register() {
 
   const navigate = useNavigate();
